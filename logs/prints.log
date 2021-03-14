@@ -1,0 +1,5 @@
+19:20:56.112 [TestNG-tests-3] INFO  resources.base - browser intialized
+19:21:02.101 [TestNG-tests-3] INFO  resources.base - Navigate to HomePage
+19:21:05.165 [TestNG-tests-1] INFO  resources.base - Successfully validated Login details
+19:21:08.731 [TestNG-tests-1] INFO  resources.base - Successfully validated Login details
+19:21:12.496 [TestNG-tests-2] INFO  resources.base - Successfully validated Navigation bar
