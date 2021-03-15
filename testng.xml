@@ -29,4 +29,9 @@
      <class name="Acacemy.VerifyingElementsareClickable"/>
     </classes>
    </test>
+    <test name = "Different Operations">
+    <classes>
+     <class name="Acacemy.DifferentOperations"/>
+    </classes>
+   </test>
 </suite> <!-- Suite -->

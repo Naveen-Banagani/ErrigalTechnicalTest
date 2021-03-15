@@ -4,20 +4,6 @@
   <listeners>
     <listener class-name="Acacemy.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Division(failed)" parallel="tests">
-    <classes>
-      <class name="Acacemy.DivisionTests">
-        <methods>
-          <include name="Teardown"/>
-          <include name="DivideDecimalTwoPointTwoMinusOne"/>
-          <include name="DivideNegativeandPostiveNumbers"/>
-          <include name="DivideZeroAndOne"/>
-          <include name="initialization"/>
-          <include name="DivideAscendRangeAndDescendRange"/>
-        </methods>
-      </class> <!-- Acacemy.DivisionTests -->
-    </classes>
-  </test> <!-- Division(failed) -->
   <test thread-count="5" name="Subtraction(failed)" parallel="tests">
     <classes>
       <class name="Acacemy.SubtractionTest">
@@ -35,6 +21,20 @@
       </class> <!-- Acacemy.SubtractionTest -->
     </classes>
   </test> <!-- Subtraction(failed) -->
+  <test thread-count="5" name="Division(failed)" parallel="tests">
+    <classes>
+      <class name="Acacemy.DivisionTests">
+        <methods>
+          <include name="Teardown"/>
+          <include name="DivideDecimalTwoPointTwoMinusOne"/>
+          <include name="DivideNegativeandPostiveNumbers"/>
+          <include name="DivideZeroAndOne"/>
+          <include name="initialization"/>
+          <include name="DivideAscendRangeAndDescendRange"/>
+        </methods>
+      </class> <!-- Acacemy.DivisionTests -->
+    </classes>
+  </test> <!-- Division(failed) -->
   <test thread-count="5" name="Multiplication(failed)" parallel="tests">
     <classes>
       <class name="Acacemy.multiplicationTests">
@@ -49,7 +49,6 @@
           <include name="MultiplyMorethanTwoBigNumbers"/>
           <include name="MultiplyOneAndZero"/>
           <include name="MultiplyNegativeandPostiveNumbers"/>
-          <include name="MultiplytwoNumbersBig"/>
         </methods>
       </class> <!-- Acacemy.multiplicationTests -->
     </classes>
@@ -69,17 +68,32 @@
           <include name="Teardown"/>
           <include name="AddNegativeandPositiveNumbers"/>
           <include name="AddMorethanTwoNumbers"/>
-          <include name="AddBigNumberandOne"/>
         </methods>
       </class> <!-- Acacemy.additionTest -->
     </classes>
   </test> <!-- Addition(failed) -->
+  <test thread-count="5" name="Different Operations(failed)" parallel="tests">
+    <classes>
+      <class name="Acacemy.DifferentOperations">
+        <methods>
+          <include name="initialization"/>
+          <include name="AddMultiply"/>
+          <include name="AddDivision"/>
+          <include name="MultiplyDivision"/>
+          <include name="AddMultiply2"/>
+          <include name="AdditionSubtraction"/>
+          <include name="AddTwoNmmbersandSubtractiongivesSevenDigitResult"/>
+          <include name="Teardown"/>
+        </methods>
+      </class> <!-- Acacemy.DifferentOperations -->
+    </classes>
+  </test> <!-- Different Operations(failed) -->
   <test thread-count="5" name="Verifying Elements(failed)" parallel="tests">
     <classes>
       <class name="Acacemy.VerifyingElementsareClickable">
         <methods>
           <include name="initialization"/>
-          <include name="number7"/>
+          <include name="number9"/>
           <include name="Teardown"/>
         </methods>
       </class> <!-- Acacemy.VerifyingElementsareClickable -->

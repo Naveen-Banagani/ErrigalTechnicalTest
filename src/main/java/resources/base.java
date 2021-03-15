@@ -12,9 +12,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-import com.google.common.io.Files;
+
 
 public class base {
 	public WebDriver driver;
@@ -44,7 +42,7 @@ public class base {
 	public String getScreenShotPath(String testCaseName, WebDriver driver) throws IOException {
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
-		String destinationFile = System.getProperty("user.dir") + "\\reports2\\" + testCaseName + ".png";
+		String destinationFile = System.getProperty("user.dir") + "\\screenshots\\" + testCaseName + ".png";
 		FileUtils.copyFile(source, new File(destinationFile));
 		return destinationFile;
 

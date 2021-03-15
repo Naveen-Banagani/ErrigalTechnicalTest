@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Acacemy.additionTest">
+      <class name="Acacemy.VerifyingElementsareClickable">
         <methods>
-          <include name="AddNmmbersgivesSevenDigitResult"/>
           <include name="initialization"/>
+          <include name="number6"/>
           <include name="Teardown"/>
         </methods>
-      </class> <!-- Acacemy.additionTest -->
+      </class> <!-- Acacemy.VerifyingElementsareClickable -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

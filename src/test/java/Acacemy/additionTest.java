@@ -42,7 +42,7 @@ public class additionTest extends base { // Extending the base class here to ini
 	@Test
 	public void AddBigNumberandOne() throws InterruptedException {
 		// Adding a big numbers and 1
-		
+		calculatorBlock.ClickWholeEquation("8989898+1");
 		Assert.assertEquals(calculatorBlock.GetTextResult(), "8989899.0");
 	}
 	@Test

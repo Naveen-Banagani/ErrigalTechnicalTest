@@ -23,7 +23,7 @@ public class VerifyingElementsareClickable extends base {
 	public void initialization() throws IOException {
 		driver = Initializebrowser();
 		calculatorBlock = new CalculatorBlock(driver);
-		calculatorBlock.ClickWholeEquation("C");
+		//calculatorBlock.ClickWholeEquation("C");
 
 	}
 
@@ -186,8 +186,7 @@ public class VerifyingElementsareClickable extends base {
 	@Test
 	public void divide() throws InterruptedException {
 		calculatorBlock.ClickWholeEquation("/");
-		// Assert.assertEquals(calculatorBlock.Output(), "/");
-		Assert.assertTrue(calculatorBlock.Output().contains("/"));
+		Assert.assertEquals(calculatorBlock.Output(), "/");
 		calculatorBlock.ClickWholeEquation("C");
 	}
 
@@ -201,6 +200,7 @@ public class VerifyingElementsareClickable extends base {
 	@Test
 	public void clear() throws InterruptedException {
 		calculatorBlock.ClickWholeEquation("C");
+		Assert.assertEquals(calculatorBlock.Output(), "");
 
 	}
 
